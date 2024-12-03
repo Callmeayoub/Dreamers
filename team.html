@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Équipe - Avenir Énergie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            background-color: #83d1ad;
+            background: linear-gradient(45deg, #83d1ad, #4CAF50);
+            background-size: 400% 400%;
+            animation: backgroundAnimation 15s ease infinite;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 40px;
+            margin-top: 50px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .team-member {
+            margin: 30px 20px;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+            text-align: center;
+            opacity: 0.9;
+            width: 250px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member h2 {
+            color: #4CAF50;
+            font-size: 24px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .team-member h2:hover {
+            color: #45a049;
+        }
+
+        .team-member button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .team-member button:hover {
+            background-color: #45a049;
+        }
+
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: none;
+            margin-top: 15px;
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: #7ac77c;
+        }
+
+        .team-member img.show {
+            display: block;
+            opacity: 1;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);  /* Light glow effect */
+        }
+
+        .team-member img:hover {
+            box-shadow: 0 0 25px rgba(118, 255, 248, 0.9);  /* Stronger glow on hover */
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 16px;
+            color: #fff;
+            padding: 20px 0;
+            background-color: #333;
+        }
+
+        .description {
+            color: #fff;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+            width: 80%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+    <script>
+        function toggleImage(name) {
+            const img = document.getElementById(name);
+            img.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <h1>Notre Équipe</h1>
+
+    <p class="description">
+        Nous avons commencé ensemble, réunis par notre passion pour l'innovation durable et notre volonté de contribuer à la transition énergétique. En tant qu'étudiants en ingénierie, nous avons décidé de nous unir pour résoudre les défis énergétiques de demain et créer un impact positif grâce aux énergies renouvelables.
+    </p>
+
+    <div class="team-container">
+        <div class="team-member">
+            <h2>Yousef Amri</h2>
+            <button onclick="toggleImage('yousse')">Afficher/Cacher</button>
+            <img src="youssef.jpg" id="yousse" alt="Yousef Amri">
+        </div>
+        <div class="team-member">
+            <h2>Syrine Zouari</h2>
+            <button onclick="toggleImage('syrine')">Afficher/Cacher</button>
+            <img src="syrine.jpg" id="syrine" alt="Syrine Zouari">
+        </div>
+        <div class="team-member">
+            <h2>Nour Gharbi</h2>
+            <button onclick="toggleImage('nour')">Afficher/Cacher</button>
+            <img src="nour.jpg" id="nour" alt="Nour Gharbi">
+        </div>
+        <div class="team-member">
+            <h2>Ayoub Gharbi</h2>
+            <button onclick="toggleImage('ayoubgh')">Afficher/Cacher</button>
+            <img src="ayoub gh.jpg" id="ayoubgh" alt="Ayoub Gharbi">
+        </div>
+        <div class="team-member">
+            <h2>Ayoub Ben Salah</h2>
+            <button onclick="toggleImage('ayoub')">Afficher/Cacher</button>
+            <img src="ayoub.jpg" id="ayoub" alt="Ayoub Ben Salah">
+        </div>
+        <div class="team-member">
+            <h2>Dhia Eddin ben Taleb</h2>
+            <button onclick="toggleImage('dhia')">Afficher/Cacher</button>
+            <img src="dhia.jpg" id="dhia" alt="Dhia Ben Taleb">
+        </div>
+        <div class="team-member">
+            <h2>Cyrine Chekki</h2>
+            <button onclick="toggleImage('cyrine')">Afficher/Cacher</button>
+            <img src="cyrine.jpg" id="cyrine" alt="Cyrine Chekki">
+        </div>
+    </div>
+
+    <footer>
+        <p>Nous sommes des étudiants en ingénierie à ESPRIT.</p>
+    </footer>
+</body>
+</html>

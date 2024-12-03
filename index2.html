@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avenir Énergie - L'avenir solaire</title>
+    <link rel="stylesheet" href="styleverave.css">
+    
+</head>
+<body onload="">
+    <header>
+        <h1 class="awesome-title"> Bienvenue chez Avenir Énergie </h1>
+        <nav>
+            <ul>
+                <li><a href="#main">Accueil</a></li>
+                <li><a href="team.html">Notre équipe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section>
+            <h2>L'énergie solaire : une opportunité incontournable</h2>
+            <p>L'énergie solaire nous permet de transformer un problème en solution. Elle réduit les émissions de CO2, améliore la qualité de vie et favorise l'innovation technologique.</p>
+            <img src="solar_panel_home.webp" alt="Maison avec panneaux solaires modernes">
+        </section>
+        <section>
+            <h2>Pourquoi choisir les énergies renouvelables ?</h2>
+            <p>Les énergies renouvelables, telles que l'énergie solaire, sont essentielles pour la transition énergétique. Elles protègent l'environnement tout en stimulant l'économie.</p>
+            <img src="renewable_farm.webp" alt="Ferme solaire et éolienne">
+        </section>
+        <section>
+            <h2>Un futur durable avec Avenir Énergie</h2>
+            <p>Notre mission est d'offrir des solutions énergétiques accessibles, abordables et durables. Rejoignez-nous pour façonner un avenir meilleur !</p>
+            <img src="solar_future.webp" alt="Famille profitant des énergies solaires">
+        </section>
+        <section>
+            <h2>Impact sur la société</h2>
+            <p>Avec Avenir Énergie, nous contribuons à un monde plus juste et durable. Nos projets favorisent l'inclusion sociale tout en réduisant la précarité énergétique.</p>
+            <img src="community_project.webp" alt="Projet communautaire axé sur l'énergie solaire">
+        </section>
+    </main>
+
+   
+      
+
+    <section id="join">
+        <h2>Formulaire d'adhésion</h2>
+        <p>Rejoignez notre mission en remplissant le formulaire ci-dessous :</p>
+        <form action="join_processing.php" method="POST">
+            <label for="name">Nom complet :</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Numéro de téléphone :</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="motivation">Motivation :</label>
+            <textarea id="motivation" name="motivation" rows="4" placeholder="Pourquoi voulez-vous nous rejoindre ?" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+        <img src="app.webp" alt="Image symbolisant l'adhésion à une mission">
+    </section>
+
+    <section id="pay">
+        <h2>Formulaire d'abonnement</h2>
+        <p>Pour devenir membre actif d’Avenir Énergie, veuillez effectuer un paiement d'abonnement de 50 € :</p>
+        <form action="payment_processing.php" method="POST">
+            <label for="cardName">Nom sur la carte :</label>
+            <input type="text" id="cardName" name="cardName" required>
+            
+            <label for="cardNumber">Numéro de carte bancaire :</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+            
+            <label for="expDate">Date d'expiration :</label>
+            <input type="month" id="expDate" name="expDate" required>
+            
+            <label for="cvv">Code CVV :</label>
+            <input type="text" id="cvv" name="cvv" required>
+            
+            <button type="submit">Payer 50 €</button>
+        </form>
+        <img src="sub.webp" alt="Soutenir avec un abonnement de 50 €">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Avenir Énergie - Tous droits réservés.</p>
+        <p>Contactez-nous à contact@avenirenergie.fr | Suivez-nous sur <a href="#">Facebook</a> et <a href="#">Instagram</a>.</p>
+    </footer>
+</body>
+</html>
